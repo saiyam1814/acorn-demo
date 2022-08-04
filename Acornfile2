@@ -1,0 +1,13 @@
+containers: {
+    frontend: {
+        image: "nginx"
+        dirs: {
+            "/var/www/html": "volume://web-content"
+        }
+        // ...
+    }
+}
+// ...
+volumes: {
+    "web-content": {}
+}

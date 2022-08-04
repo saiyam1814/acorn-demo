@@ -1,0 +1,6 @@
+containers: {
+  web: {
+      build: "."
+      ports: publish: "8080/http"
+}
+}
