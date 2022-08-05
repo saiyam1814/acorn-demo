@@ -1,6 +1,7 @@
 containers: {
     frontend: {
         image: "nginx"
+        ports: publish: "80/tcp"
         dirs: {
             "/var/www/html": "volume://web-content"
         }
